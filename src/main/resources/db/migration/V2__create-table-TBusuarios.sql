@@ -1,0 +1,7 @@
+CREATE TABLE TBusuarios (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(50) NOT NULL UNIQUE,
+    email varchar(50) NOT NULL UNIQUE,
+    contrasena VARCHAR(300) NOT NULL UNIQUE,
+    PRIMARY KEY (id)
+)

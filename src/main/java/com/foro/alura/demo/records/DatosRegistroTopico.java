@@ -1,5 +1,7 @@
 package com.foro.alura.demo.records;
 
-public record DatosRegistroTopico(String titulo, String mensaje) {
+import com.foro.alura.demo.modelo.Usuario;
+
+public record DatosRegistroTopico(String titulo, String mensaje, Usuario usuario) {
 
 }
