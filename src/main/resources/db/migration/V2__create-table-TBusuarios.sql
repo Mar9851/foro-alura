@@ -1,4 +1,4 @@
-CREATE TABLE  usuarios (
+CREATE TABLE  tbusuarios (
     id BIGINT NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(100) NOT NULL UNIQUE,
     email varchar(100) NOT NULL UNIQUE,
