@@ -15,18 +15,20 @@ public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "autor_id")
     private Long id;
     private String nombre;
     private String email;
     private String contrasena;
 
-    public Usuario(DatosRegistroUsuario usuario) {
-        this.nombre=usuario.nombre();
-        this.email=usuario.email();
-        this.contrasena=usuario.contrasena();
+    public Usuario(DatosRegistroUsuario autor) {
+        this.nombre=autor.nombre();
+        this.email=autor.email();
+        this.contrasena=autor.contrasena();
 
     }
 
-    public Usuario(Usuario usuario) {
+
+    public Usuario(Usuario autor) {
     }
 }

@@ -1,11 +1,17 @@
 /*package com.foro.alura.demo.modelo;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Entity
-@Table
+@Table(name="TBrespuestas")
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Respuesta {
 
     @Id
