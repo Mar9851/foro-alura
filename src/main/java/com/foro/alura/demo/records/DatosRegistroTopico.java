@@ -12,7 +12,7 @@ public record DatosRegistroTopico(
         @NotBlank
         String mensaje,
         @NotNull @Valid
-        Usuario autor,
+        Usuario usuario,
         @NotNull @Valid
         Curso curso) {
 
