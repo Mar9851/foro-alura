@@ -29,6 +29,7 @@ public class UsuarioController {
 
         iusuarioRepository.save(new Usuario(datosRegistroUsuario));
         System.out.println(datosRegistroUsuario);
+        System.out.println(datosRegistroUsuario);
     }
 
 }
