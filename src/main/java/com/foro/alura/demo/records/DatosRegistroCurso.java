@@ -1,8 +1,9 @@
 package com.foro.alura.demo.records;
 
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 
-public record DatosCurso(
+public record DatosRegistroCurso(
         @NotBlank
         String nombre,
         @NotBlank

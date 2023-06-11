@@ -20,10 +20,10 @@ public class Usuario {
     private String email;
     private String contrasena;
 
-    public Usuario(DatosRegistroUsuario usuario) {
-        this.nombre=usuario.nombre();
-        this.email=usuario.email();
-        this.contrasena=usuario.contrasena();
+    public Usuario(DatosRegistroUsuario datosRegistroUsuario) {
+        this.nombre=datosRegistroUsuario.nombre();
+        this.email=datosRegistroUsuario.email();
+        this.contrasena=datosRegistroUsuario.contrasena();
 
     }
 

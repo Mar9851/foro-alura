@@ -1,6 +1,6 @@
 package com.foro.alura.demo.modelo;
 
-import com.foro.alura.demo.records.DatosCurso;
+import com.foro.alura.demo.records.DatosRegistroCurso;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -19,9 +19,9 @@ public class Curso {
     private String categoria;
 
 
-    public Curso(DatosCurso curso) {
-        this.nombre= curso.nombre();
-        this.categoria= curso.categoria();
+    public Curso(DatosRegistroCurso datosRegistroCurso) {
+        this.nombre= datosRegistroCurso.nombre();
+        this.categoria= datosRegistroCurso.categoria();
     }
 
     public Curso(Curso curso) {
